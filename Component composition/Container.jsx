@@ -8,7 +8,10 @@ export function Container({ title, children }) {
   }
 
   return (
-    <div className="app">
+    <div
+      className="app"
+      style={{ backgroundColor: "white", border: "1px solid red" }}
+    >
       <div className="app-title">
         {title}
         <button onClick={handleToggleCollapse}>Toggle</button>
