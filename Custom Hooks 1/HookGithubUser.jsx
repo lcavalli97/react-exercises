@@ -19,7 +19,7 @@ function useGithubUser(username) {
       });
   }, [username]);
 
-  return data;
+  return {data};
 }
 
 export function HookGithubUser({ username }) {
