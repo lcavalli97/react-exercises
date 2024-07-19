@@ -5,10 +5,6 @@ export function useGithubUser(username) {
     username ? `https://api.github.com/users/${username}` : null
   );
 
-  function fetchGithubUser() {
-    mutate();
-  }
-
   return {
     data,
     error,
