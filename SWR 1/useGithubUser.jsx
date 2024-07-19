@@ -9,6 +9,5 @@ export function useGithubUser(username) {
     data,
     error,
     loading: !data && !error,
-    onFetchUser: fetchGithubUser,
   };
 }
