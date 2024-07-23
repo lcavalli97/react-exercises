@@ -2,7 +2,6 @@ import { Link, Route, Routes } from "react-router-dom";
 import { ShowGithubUser } from "./ShowGithubUser";
 import { Container } from "./Container";
 import { GithubUserList } from "./GithubUserList";
-import { Users } from "./Users";
 
 export function App() {
   return (
@@ -16,9 +15,8 @@ export function App() {
       }
     >
       <Routes>
-        <Route path="users/*" element={<Users />}>
+        <Route path="users/*" element={<GithubUserList />}>
           <Route index element={<p>Add a user and select it</p>} />
-          <Route path="list" element={<GithubUserList />} />
           <Route path=":username" element={<ShowGithubUser />} />
         </Route>
       </Routes>
